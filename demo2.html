@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <style>
+        div{
+            width:98px;
+            height:48px;
+            border:2px solid #000;
+            border-radius:50%;
+            border-bottom:50px solid #000;
+            position:absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+            transition:all 2s ease;
+        }
+        div:before{
+            content:"";
+            width:8px;
+            height:8px;
+            border:20px solid #000;
+            border-radius:50%;
+            position:absolute;
+            left:0;
+            top:50%;
+            background-color: #fff;
+        }
+        div:after{
+            content:"";
+            width:8px;
+            height:8px;
+            border:20px solid #fff;
+            border-radius:50%;
+            position:absolute;
+            top:50%;
+            right:0;
+            background-color:#000;
+
+        }
+
+    </style>
+    <script>
+        window.onload=function (ev) {
+            var d=document.querySelector("div");
+            d.onmouseover=function(e){
+                d.style.transform="rotate(180deg)";
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

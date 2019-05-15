@@ -1,0 +1,121 @@
+<!doctype html><!-- 文档说明-->
+<!--Hyper Text Markup Language(HTML)超文本标记语言
+HTML文档也叫树文档
+<html></html>根标签
+<meta>单标签（说明不需要在中间写内容）
+属性：对于标签功能的补充说明
+
+css:Cascading Style Sheets(层叠样式表）
+
+所有修饰文字的标签都是行元素，除此之外全是块元素
+
+标签从排列方式上来说分为：
+        1.块元素（独占一个空间,不能和其他元素共享一行;div中默认的宽是浏览器的宽度，高度是元素的高度,可以设置宽高）
+        2.行内元素（可以和其他元素共享一行，不能设置宽高）
+        3.行内块元素（既能设置宽高，又能和其他元素共享一行）
+    呈现方式:矩形
+
+SEO：Search Engine Optimization(搜索引擎优化）是一种利用搜索引擎的规则提高网站在有关搜索引擎内的自然排名的方式
+
+
+-->
+<html lang="en">
+<!--
+<head></head>对整个文档中心思想的说明-->
+<head>
+    <meta charset="UTF-8">
+    <!--运行到不同的设备上-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--兼容IE浏览器-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+
+        }
+        span{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        }
+
+    </style>
+</head>
+
+<!--
+
+<body></body>在页面中呈现的内容
+-->
+<body>
+<div>1</div>
+<div>2</div>
+<span>a</span>
+<span>b</span>
+<strong>粗体</strong>
+<b>粗体1</b><!--
+<b>粗体</b>
+<i>倾斜<i>
+<s>删除线</s>
+以上三个标签，仅仅只是字体上的改变，并没有SEO优化-->
+
+<!--
+<strong>粗体</strong>
+<em>倾斜</em>
+<del>删除线</del>
+
+以上3个标签，不仅是字体上的改变，也符合SEO优化规则
+
+-->
+<em>倾斜</em>
+<i>倾斜1</i>
+<del>删除</del>
+<a href="">sdf</a>
+<s>删除线</s>
+
+<img src="timg1.jpg" width="100px"/>
+<img src="timg1.jpg" width="100px">
+    <!--<div>
+        这是一个div
+
+    </div>
+    <a href="http://www.baidu.com">百度</a>
+    <br/>
+    <img src="timg1.jpg" alt="" width="100px" height="100px" title="This is a photo">
+    <br/>
+    <img src="https://echarts.baidu.com/images/logo.png" alt="timg1.jpg" title="echarts">
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ol>
+
+    <table>
+        <tr>
+            <th>name</th>
+            <th>class</th>
+            <th>sex</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>1班</td>
+            <td>男</td>
+            <td>12</td>
+        </tr>
+    </table>-->
+
+
+
+</body>
+</html>
