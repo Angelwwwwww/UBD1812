@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>售票系统</title>
+    <link rel="stylesheet" href="css/demo.css">
+
+    <script>
+
+        /*window.onload=function(ev){
+            var banner=document.querySelector(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+
+                if(num==2){
+                    num=0;
+                }
+                for(var i=0;i<banner.length;i++){
+                    banner[i].style.display="none";
+                    btns[i].style.background="#000";
+                }
+                banner[num].style.display="block";
+                btns[num].style.background="orange";
+                num++;
+            },3000)
+        }*/
+
+
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },3000)
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="image/logo.png" alt="">
+    <img src="image/head.jpg" alt="">
+
+</header>
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="">国内机票</a>
+            <a href="">国际机票</a>
+            <a href="">民航资讯</a>
+            <a href="">民航问答</a>
+
+
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <a href="" class="sanjiao"></a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳 </a>
+    <a href="">北京 </a>
+    <a href="">上海</a>
+    <a href="">广州 </a>
+    <a href="">南京</a>
+    <a href="">天津 </a>
+    <a href="">武汉 </a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都 </a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+<!--热门航线预定-->
+<div class="hotLine">
+    <div class="h">
+        <div class="hLeft">热门航向预定</div>
+        <div class="hRight">
+            <a href="">沈阳</a>
+            <a href="">重庆</a>
+            <a href="">海口</a>
+            <a href="">成都</a>
+            <a href="">武汉</a>
+            <a href="">广州</a>
+            <a href="">上海</a>
+            <a href="">北京</a>
+            <a href="">深圳</a>
+            <a href="" class="nation">全国</a>
+        </div>
+    </div>
+    <hr/>
+    <div class="ticket">
+        <div class="t">
+            <div class="address">海口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;郑州</div>
+            <div class="time">12月16日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥150</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">海口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长沙</div>
+            <div class="time">10月15日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥110</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">武汉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;神农架</div>
+            <div class="time">05月08日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥117</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">银川&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昆明</div>
+            <div class="time">05月08日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥220</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">太原&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昆明</div>
+            <div class="time">11月11日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥250</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">南京&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海浦东</div>
+            <div class="time">07月03日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥150</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">西安&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海浦东</div>
+            <div class="time">01月25日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥200</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">合肥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海口</div>
+            <div class="time">05月27日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥279</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">天津&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三亚</div>
+            <div class="time">05月22日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥299</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address address1">哈尔滨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三亚</div>
+            <div class="time">05月15日</div>
+            <div class="prices">
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥540</span>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+</body>
+</html>
